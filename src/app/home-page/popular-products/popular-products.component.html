@@ -1,0 +1,22 @@
+<div class="popular-products-wrapper">
+    <div class="title">
+        <div class="decorator-wrapper decorator-left">
+            <img src="https://wordpressthemes.live/WCG1/WCM17_jewellery/default/wp-content/uploads/2023/11/heading_left.png" />
+        </div>
+        <div class="title-text">Popular Products</div>
+        <div class="decorator-wrapper decorator-right">
+            <img src="https://wordpressthemes.live/WCG1/WCM17_jewellery/default/wp-content/uploads/2023/11/heading_right.png" />
+        </div>
+    </div>
+    <div class="subtitle">Our most popular and top selling products</div>
+    <div class="products-list-wrapper">
+        <app-product-thumbnail *ngFor="let product of products"
+            [name]="product.name"
+            [thumbnailUrl]="product.thumbnailUrl"
+            [price]="product.price"
+        ></app-product-thumbnail>
+    </div>
+    <div class="button-wrapper">
+        <div class="button" (click)="navigationService.navigatorSubject.next('/products')">View All</div>
+    </div>
+</div>

@@ -1,0 +1,89 @@
+<div class="other-products-list">
+    <div class="other-products-list-wrapper">
+        <div class="product-list-label">New Products</div>
+        <div class="products-list-col">
+            <div class="other-product" *ngFor="let product of newProducts">
+                <div class="other-product-thumbnail">
+                    <img src="{{ product.thumbnailUrl }}" />
+                </div>
+                <div class="other-product-content">
+                    <div class="other-product-title">{{ product.name }}</div>
+                    <div class="rating">
+                        <fa-icon [icon]="starIcon" *ngFor="let rating of product.rating|times"></fa-icon>
+                    </div>
+                    <div class="price">$ {{ product.price }}</div>
+                    <div class="other-product-buttons">
+                        <div class="other-product-button">
+                            <fa-icon [icon]="cardIcon"></fa-icon>
+                        </div>
+                        <div class="other-product-button">
+                            <fa-icon [icon]="carIcon"></fa-icon>
+                        </div>
+                        <div class="other-product-button">
+                            <fa-icon [icon]="likeIcon"></fa-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view-all-button">View All</div>
+    </div>
+    <div class="other-products-list-wrapper">
+        <div class="product-list-label">BestSale Products</div>
+        <div class="products-list-col">
+            <div class="other-product" *ngFor="let product of bestSaleProducts">
+                <div class="other-product-thumbnail">
+                    <img src="{{ product.thumbnailUrl }}" />
+                </div>
+                <div class="other-product-content">
+                    <div class="other-product-title">{{ product.name }}</div>
+                    <div class="rating">
+                        <fa-icon [icon]="starIcon" *ngFor="let rating of product.rating|times"></fa-icon>
+                    </div>
+                    <div class="price">$ {{ product.price }}</div>
+                    <div class="other-product-buttons">
+                        <div class="other-product-button">
+                            <fa-icon [icon]="cardIcon"></fa-icon>
+                        </div>
+                        <div class="other-product-button">
+                            <fa-icon [icon]="carIcon"></fa-icon>
+                        </div>
+                        <div class="other-product-button">
+                            <fa-icon [icon]="likeIcon"></fa-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view-all-button">View All</div>
+    </div>
+    <div class="other-products-list-wrapper">
+        <div class="product-list-label">OnSale Products</div>
+        <div class="products-list-col">
+            <div class="other-product" *ngFor="let product of onSaleProducts">
+                <div class="other-product-thumbnail">
+                    <img src="{{ product.thumbnailUrl }}" />
+                </div>
+                <div class="other-product-content">
+                    <div class="other-product-title">{{ product.name }}</div>
+                    <div class="rating">
+                        <fa-icon [icon]="starIcon" *ngFor="let rating of product.rating|times"></fa-icon>
+                    </div>
+                    <div class="price">$ {{ product.price }}</div>
+                    <div class="other-product-buttons">
+                        <div class="other-product-button">
+                            <fa-icon [icon]="cardIcon"></fa-icon>
+                        </div>
+                        <div class="other-product-button">
+                            <fa-icon [icon]="carIcon"></fa-icon>
+                        </div>
+                        <div class="other-product-button">
+                            <fa-icon [icon]="likeIcon"></fa-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view-all-button">View All</div>
+    </div>
+</div>

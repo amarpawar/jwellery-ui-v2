@@ -1,0 +1,38 @@
+div.navigation-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 24px 0;
+    background-color: #f4f4f4;
+}
+
+div.navigation-path {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+span.path {
+    font-size: 13px;
+    margin-right: 24px;
+    color: #888888;
+}
+
+.right-icon {
+    margin-left: 24px;
+    font-size: 12px;
+}
+
+span.path:last-child {
+    margin-right: 0;
+}
+
+@media only screen and (max-width: 1300px) {
+    div.navigation-path {
+        width: 1100px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    div.navigation-path {
+        width: 90%;
+    }
+}

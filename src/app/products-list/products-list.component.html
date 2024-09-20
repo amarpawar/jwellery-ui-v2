@@ -1,0 +1,80 @@
+<div class="body-header">
+    <app-nav-bar></app-nav-bar>
+</div>
+<app-navigation-header></app-navigation-header>
+<div class="products-list-wrapper">
+    <div class="filter-wrapper">
+        <div class="filter-container">
+            <div class="filter-title">Brands</div>
+            <div class="filter-options">
+                <div class="filter-option"><input type="checkbox"> Tanishq</div>
+                <div class="filter-option"><input type="checkbox"> Joyalukkas</div>
+                <div class="filter-option"><input type="checkbox"> BlueStone</div>
+                <div class="filter-option"><input type="checkbox"> CaratLane</div>
+                <div class="filter-option"><input type="checkbox"> Monica Vinader</div>
+            </div>
+        </div>
+        <div class="filter-container">
+            <div class="filter-title">Size</div>
+            <div class="filter-options">
+                <div class="filter-option"><input type="checkbox"> S</div>
+                <div class="filter-option"><input type="checkbox"> M</div>
+                <div class="filter-option"><input type="checkbox"> L</div>
+                <div class="filter-option"><input type="checkbox"> XL</div>
+            </div>
+        </div>
+        <div class="filter-container">
+            <div class="filter-title">Price</div>
+            <div class="filter-options price-filter-options">
+                <div class="price-input"><input type="text" class="price-input-box" placeholder="$5" /></div>
+                <div class="price-input-divider">-</div>
+                <div class="price-input"><input type="text" class="price-input-box" placeholder="$150" /></div>
+            </div>
+        </div>
+        <div class="filter-container">
+            <div class="filter-title">On Sale</div>
+            <div class="filter-options">
+                <div class="filter-option"><input type="checkbox"> Yes</div>
+            </div>
+        </div>
+        <div class="filter-container">
+            <div class="filter-title">Color</div>
+            <div class="filter-options">
+                <div class="filter-option"><span class="color-indicator color-indicator-white"></span> White</div>
+                <div class="filter-option"><span class="color-indicator color-indicator-orange"></span> Orange</div>
+                <div class="filter-option"><span class="color-indicator color-indicator-black"></span> Black</div>
+                <div class="filter-option"><span class="color-indicator color-indicator-green"></span> Green</div>
+                <div class="filter-option"><span class="color-indicator color-indicator-blue"></span> Blue</div>
+                <div class="filter-option"><span class="color-indicator color-indicator-yellow"></span> Yellow</div>
+                <div class="filter-option"><span class="color-indicator color-indicator-pink"></span> Pink</div>
+            </div>
+        </div>
+    </div>
+    <div class="products-wrapper">
+        <div class="products-list-top">
+            <div class="product-view-icons">
+                <div class="view-icon view-icon-selected"><fa-icon [icon]="gridIcon"></fa-icon></div>
+                <div class="view-icon"><fa-icon [icon]="listIcon"></fa-icon></div>
+            </div>
+            <div class="products-count-indicator">There are 15 products</div>
+            <div class="sort-by-wrapper">
+                <div class="sort-by-title">Sort By: </div>
+                <div class="sort-by-dropdown">
+                    Popularity
+                    <div class="dropdown-arrow"><fa-icon [icon]="downArrowIcon"></fa-icon></div>
+                </div>
+            </div>
+            <div class="filter-icon-wrapper"><fa-icon [icon]="filterIcon"></fa-icon></div>
+        </div>
+        <div class="products-list-container">
+            <app-product-thumbnail *ngFor="let product of products"
+            [name]="product.name"
+            [thumbnailUrl]="product.thumbnailUrl"
+            [price]="product.price"
+        ></app-product-thumbnail>
+        </div>
+    </div>
+</div>
+<div class="footer-wrapper">
+    <app-footer></app-footer>
+</div>

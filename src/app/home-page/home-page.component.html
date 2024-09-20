@@ -1,0 +1,23 @@
+<div class="body-header">
+    <app-nav-bar></app-nav-bar>
+    <app-carousel></app-carousel>
+</div>
+<div class="body-content">
+    <div class="shop-by-categories-wrapper">
+        <app-shop-by-categories></app-shop-by-categories>
+    </div>
+    <app-banner></app-banner>
+    <app-popular-products
+        [products]="products"></app-popular-products>
+</div>
+<div class="client-testimonials-wrapper">
+    <app-client-testimonials></app-client-testimonials>
+</div>
+<app-other-products
+    [newProducts]="newProducts"
+    [bestSaleProducts]="bestSaleProducts"
+    [onSaleProducts]="onSaleProducts"
+></app-other-products>
+<div class="footer-wrapper">
+    <app-footer></app-footer>
+</div>

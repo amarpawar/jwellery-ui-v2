@@ -1,0 +1,81 @@
+div.client-testimonials {
+    width: 100%;
+    height: auto;
+    background-color: #f4f4f4;
+    background-image: url("https://demo.posthemes.com/pos_corano/themes/theme_corano1/assets/img/bg_testimonial.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 64px;
+    flex-direction: column;
+}
+
+div.title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+div.subtitle {
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 24px;
+}
+
+div.client {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+div.client img {
+    width: 100%;
+    height: 100%;
+}
+
+div.clients-list {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+div.active-client {
+    width: 100px;
+    height: 100px;
+}
+
+div.testimony {
+    font-size: 15px;
+    width: 950px;
+    text-align: center;
+    line-height: 24px;
+    color: #555555;
+    margin-bottom: 32px;
+}
+
+div.client-email {
+    font-size: 15px;
+    color: #888888;
+    margin-bottom: 8px;
+}
+
+div.client-name {
+    font-size: 15px;
+    color: #292929;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px) {
+    div.testimony {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    div.client-testimonials {
+        background-image: none;
+    }
+}

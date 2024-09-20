@@ -1,0 +1,249 @@
+div.product-details-wrapper, div.product-desp-reviews-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+div.product-details-wrapper {
+    display: flex;
+}
+
+div.product-images {
+    width: 540px;
+    height: auto;
+    margin-right: 24px;
+}
+
+div.large-image-view {
+    width: 540px;
+    height: 540px;
+    margin-bottom: 24px;
+}
+
+div.large-image-view img {
+    width: 100%;
+    height: 100%;
+}
+
+div.product-images-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+div.small-image-view {
+    width: 105px;
+    height: 105px;
+    box-sizing: border-box;
+}
+
+div.small-image-view img {
+    width: 100%;
+    height: 100%;
+}
+
+div.small-image-view-selected {
+    border: 1px solid #c29958;
+}
+
+div.product-details {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+div.product-name {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+div.product-review-count-wrapper{
+    font-size: 14px;
+    color: #888888;
+    margin-bottom: 24px;
+}
+
+.rating-icon {
+    color: #f3c30b;
+}
+
+span.reviews-count {
+    margin-left: 8px;
+}
+
+div.product-price {
+    font-size: 26px;
+    font-weight: 500;
+    color: #555555;
+    margin-bottom: 24px;
+}
+
+div.product-description {
+    color: #777777;
+    font-size: 14px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-top: 1px solid #efefef;
+    letter-spacing: .025em;
+}
+
+div.dimentions-titie {
+    margin-bottom: 8px;
+}
+
+div.dimensions-dropdown-wrapper {
+    box-sizing: border-box;
+    border: 1px solid #efefef;
+    display: inline-block;
+    padding: 12px 24px 12px 12px;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+div.dropdown-arrow {
+    width: 12px;
+    height: 12px;
+    font-size: 10px;
+    position: absolute;
+    left: calc(100% - 18px);
+    top: calc(50% - 6px);
+}
+
+div.quantity-input-wrapper {
+    width: 86px;
+    height: 40px;
+    box-sizing: border-box;
+    padding-left: 22px;
+    padding-right: 22px;
+    border: 1px solid #efefef;
+    position: relative;
+    margin-right: 24px;
+}
+
+div.quantity-input-wrapper input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+div.decrease-count, div.increase-count {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    position: absolute;
+    top: calc(50% - 8px);
+    cursor: pointer;
+}
+
+div.decrease-count {
+    left: 6px;
+}
+
+div.increase-count {
+    left: calc(100% - 20px);
+}
+
+div.add-to-cart-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+div.add-to-cart-button {
+    font-size: 14px;
+    background-color: #c29958;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+div.other-options-wrapper {
+    display: flex;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 24px;
+}
+
+div.other-option {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+div.compare-option {
+    margin-right: 24px;
+    padding-right: 24px;
+    border-right: 1px solid #e5e5e5;
+}
+
+div.other-info {
+    color: rgb(80, 80, 80);
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.tick-icon {
+    margin-right: 8px;
+}
+
+div.payment-icon svg {
+    width: 60px;
+    height: 40px;
+}   
+
+div.payment-methods-wrapper {
+    margin-top: 24px;
+    background-color: #f2f2f2;
+    padding: 16px;
+}
+
+div.payment-icons-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+div.payment-disclaimer {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+div.product-details-tabs-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+div.product-details-tab {
+    height: 48px;
+    width: 150px;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 40px;
+    border: 1px solid #efefef;
+    margin-right: 24px;
+    border-bottom: none;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+div.product-desp-reviews {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #efefef;
+}
+
+div.product-description {
+    box-sizing: border-box;
+    padding: 16px;
+    letter-spacing: .025em;
+}
+
+div.selected-tab {
+    background-color: #c29958;
+    color: #ffffff;
+}

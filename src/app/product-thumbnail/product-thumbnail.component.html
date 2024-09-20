@@ -1,0 +1,15 @@
+<div class="product-wrapper">
+    <div class="product-thumbnail" (click)="navigationService.navigatorSubject.next('/product-details')">
+        <img class="product-thumbnail-img" src="{{ thumbnailUrl }}" />
+    </div>
+    <div class="product-details">
+        <div class="product-title" (click)="navigationService.navigatorSubject.next('/product-details')">{{ name }}</div>
+        <div class="product-price">${{ price }}</div>
+        <div class="buttons">
+            <div class="button"><fa-icon [icon]="likeIcon"></fa-icon></div>
+            <div class="button"><fa-icon [icon]="compareIcon"></fa-icon></div>
+            <div class="button"><fa-icon [icon]="cartIcon"></fa-icon></div>
+            <div class="button"><fa-icon [icon]="checkoutIcon"></fa-icon></div>
+        </div>
+    </div>
+</div>

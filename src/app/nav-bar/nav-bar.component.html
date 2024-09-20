@@ -1,0 +1,55 @@
+<div class="navbar-wrapper">
+    <div class="navbar">
+        <div class="menu-button" (click)="toggleLeftSideMenu(true)">
+            <fa-icon [icon] = "menuIcon"></fa-icon>
+        </div>
+        <div class="logo" #logo>
+            <img src="https://i.postimg.cc/Wbs83bJZ/logo-corano.png" />
+        </div>
+        <div class="menu">
+            <div class="menu-item" (click)="navigationService.navigatorSubject.next('/home')">Home</div>
+            <div class="menu-item" (click)="navigationService.navigatorSubject.next('/products')">Shop</div>
+            <div class="menu-item">Categories <fa-icon [icon]="downArrayIcon"></fa-icon></div>
+            <div class="menu-item">Products <fa-icon [icon]="downArrayIcon"></fa-icon></div>
+            <div class="menu-item">Contact</div>
+        </div>
+        <div class="search-bar-wrapper" #searchBar>
+            <div class="search-bar">
+                <app-search-bar
+                    [height]="44"
+                    [showCloseButton]="showSearchCloseButton"
+                    (closeSearchBox)="toggleSearchBar()"
+                ></app-search-bar>
+            </div>
+        </div>
+        <div class="right-menu-wrapper">
+            <div class="right-menu-item"><fa-icon [icon]="userIcon"></fa-icon></div>
+            <div class="right-menu-item"><fa-icon [icon]="compareIcon"></fa-icon></div>
+            <div class="right-menu-item"><fa-icon [icon]="likeIcon"></fa-icon></div>
+            <div class="right-menu-item"><fa-icon [icon]="bagIcon"></fa-icon></div>
+        </div>
+        <div class="right-menu-button">
+            <span #searchIconButton><fa-icon [icon] = "searchIcon" (click)="toggleSearchBar()"></fa-icon></span>
+            <fa-icon [icon] = "ellipsisIcon"></fa-icon>
+        </div>
+    </div>
+</div>
+<div class="menu-overlay" #menuOverlay>
+    <div class="slide-menu left-slide-menu" #leftSlideMenu>
+        <div class="slide-menu-header">
+            <div class="logo slide-menu-logo">
+                <img src="https://i.postimg.cc/Wbs83bJZ/logo-corano.png" />
+            </div>
+            <div class="close-button" (click)="toggleLeftSideMenu(false)">
+                <fa-icon [icon]="closeIcon"></fa-icon>
+            </div>
+        </div>
+        <div class="slide-menu-items-wrapper">
+            <div class="slide-menu-item">Home</div>
+            <div class="slide-menu-item">Shop</div>
+            <div class="slide-menu-item">Categories <fa-icon [icon]="downArrayIcon"></fa-icon></div>
+            <div class="slide-menu-item">Products <fa-icon [icon]="downArrayIcon"></fa-icon></div>
+            <div class="slide-menu-item">Contact</div>
+        </div>
+    </div>
+</div>

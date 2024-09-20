@@ -1,0 +1,11 @@
+<div class="search-bar" [style.height]="height + 'px'">
+    <div class="search-icon" [style.height]="height + 'px'" [style.width]="height + 'px'">
+        <fa-icon [icon]="searchIcon"></fa-icon>
+    </div>
+    <div class="search-input-wrapper">
+        <input class="search-input" type="text" />
+    </div>
+    <div class="close-icon" [style.height]="height + 'px'" [style.width]="height + 'px'" *ngIf="showCloseButton">
+        <fa-icon [icon]="closeIcon" (click)="closeSearch()"></fa-icon>
+    </div>
+</div>
